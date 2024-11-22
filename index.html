@@ -217,7 +217,7 @@
                 .attr('x2', 0)
                 .attr('y2', -radius)
                 .attr('stroke', 'white')
-                .attr('stroke-width', 2);
+                .attr('stroke-width', 5);
 
             // Function to update the second hand
             function updateSecondHand() {
@@ -248,8 +248,8 @@
                     .attr('x2', 0)
                     .attr('y2', -radius)
                     .attr('stroke', 'white')
-                    .attr('stroke-width', 2)
-                    .attr('stroke-dasharray', '25,5') // Updated dash pattern
+                    .attr('stroke-width', 5)
+                    .attr('stroke-dasharray', '50,10') // Updated dash pattern
                     .attr('transform', `rotate(${sunriseAngle})`)
                     .on('mouseover', function(event) {
                         if (isExpanded) return;
@@ -275,8 +275,8 @@
                     .attr('x2', 0)
                     .attr('y2', -radius)
                     .attr('stroke', 'white')
-                    .attr('stroke-width', 2)
-                    .attr('stroke-dasharray', '25,5') // Updated dash pattern
+                    .attr('stroke-width', 5)
+                    .attr('stroke-dasharray', '50,10') // Updated dash pattern
                     .attr('transform', `rotate(${sunsetAngle})`)
                     .on('mouseover', function(event) {
                         if (isExpanded) return;
